@@ -39,6 +39,8 @@
             this.rbresta = new System.Windows.Forms.RadioButton();
             this.lblresultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.btnsalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,6 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(100, 23);
             this.txt1.TabIndex = 0;
-            this.txt1.Text = "0";
             this.txt1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt1_KeyPress);
             // 
             // txt2
@@ -57,7 +58,6 @@
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(100, 23);
             this.txt2.TabIndex = 1;
-            this.txt2.Text = "0";
             this.txt2.HideSelectionChanged += new System.EventHandler(this.txt2_HideSelectionChanged);
             this.txt2.TextChanged += new System.EventHandler(this.txt2_TextChanged);
             this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
@@ -90,6 +90,7 @@
             this.rbsuma.TabStop = true;
             this.rbsuma.Text = "Suma";
             this.rbsuma.UseVisualStyleBackColor = true;
+            this.rbsuma.CheckedChanged += new System.EventHandler(this.rbsuma_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -115,6 +116,7 @@
             this.rbdiv.TabStop = true;
             this.rbdiv.Text = "Division";
             this.rbdiv.UseVisualStyleBackColor = true;
+            this.rbdiv.CheckedChanged += new System.EventHandler(this.rbdiv_CheckedChanged);
             // 
             // rbmulti
             // 
@@ -126,6 +128,7 @@
             this.rbmulti.TabStop = true;
             this.rbmulti.Text = "Multiplicacion";
             this.rbmulti.UseVisualStyleBackColor = true;
+            this.rbmulti.CheckedChanged += new System.EventHandler(this.rbmulti_CheckedChanged);
             // 
             // rbresta
             // 
@@ -137,6 +140,7 @@
             this.rbresta.TabStop = true;
             this.rbresta.Text = "Resta";
             this.rbresta.UseVisualStyleBackColor = true;
+            this.rbresta.CheckedChanged += new System.EventHandler(this.rbresta_CheckedChanged);
             // 
             // lblresultado
             // 
@@ -157,11 +161,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl2.Location = new System.Drawing.Point(56, 141);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(0, 21);
+            this.lbl2.TabIndex = 12;
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.Location = new System.Drawing.Point(281, 311);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(75, 23);
+            this.btnsalir.TabIndex = 13;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(380, 356);
+            this.Controls.Add(this.btnsalir);
+            this.Controls.Add(this.lbl2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblresultado);
             this.Controls.Add(this.groupBox1);
@@ -191,5 +217,7 @@
         private RadioButton rbresta;
         private Label lblresultado;
         private Button button1;
+        private Label lbl2;
+        private Button btnsalir;
     }
 }
