@@ -29,14 +29,14 @@ namespace radiobutton
 
             if (txt1.Text == "" )
             {
-                MessageBox.Show("Ingrese primer numero ahora","Advertencia",MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ingrese primer numero ahora porfavor","Advertencia",MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
                 txt1.Focus();
                
 
             }
              else if (txt2.Text == "")
             {
-                MessageBox.Show("Ingrese segundo numero ahora", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ingrese segundo numero ahora porfavor", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txt2.Focus();
                 
             }
@@ -87,7 +87,7 @@ namespace radiobutton
         {
             if ((e.KeyChar >= 32 && e.KeyChar == 47) || (e.KeyChar >= 58 && e.KeyChar <= 255) ||e.KeyChar == 46)
             {
-                MessageBox.Show("Ingrese solo números", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ingrese solo nÃºmeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 e.Handled = true;
                 return;
             }
@@ -156,7 +156,7 @@ namespace radiobutton
             var eleccion = DialogResult;
                                           
             
-                eleccion = MessageBox.Show("¿Desea salir?" , "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                eleccion = MessageBox.Show("Â¿Desea salir?" , "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
           
             if (eleccion == DialogResult.Yes)
