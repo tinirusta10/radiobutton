@@ -29,14 +29,14 @@ namespace radiobutton
 
             if (txt1.Text == "" )
             {
-                MessageBox.Show("Ingrese primer numero","Advertencia",MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ingrese primer numero ahora","Advertencia",MessageBoxButtons.OK ,MessageBoxIcon.Exclamation);
                 txt1.Focus();
                
 
             }
              else if (txt2.Text == "")
             {
-                MessageBox.Show("Ingrese segundo numero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ingrese segundo numero ahora", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txt2.Focus();
                 
             }
